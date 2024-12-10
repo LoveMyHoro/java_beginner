@@ -1,2 +1,0 @@
-1.Bean工厂的后置处理器
-    当BeanFactory实例化之后(Bean创建之前)，回调这个函数，注册一些BeanDefinition

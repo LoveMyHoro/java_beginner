@@ -1,5 +1,0 @@
-1.context.class文件名为AnnotationConfigServletWebServerApplicationContext它通过调用getBeanFactory()方法
-获得DefaultListableBeanFactory(),并把关于Bean的处理委托给了、DefaultListableBeanFactory。自己相当于套壳
-
-2.通常context通过getBeanFactory()方法获得的ConfigurableListableBeanFactory是DefaultListableBeanFactory
-的父类

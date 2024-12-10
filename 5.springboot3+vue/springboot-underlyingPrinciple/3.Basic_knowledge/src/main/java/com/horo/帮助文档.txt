@@ -1,5 +1,0 @@
-相关知识
-1.
-    (1)spring.factories 用于声明自动配置类，一旦类被加载，Spring 将根据它们的定义进行 Bean 的创建和管理。
-    (2)AutoConfiguration.imports 提供了一种机制，允许多个自动配置类之间通过在配置类中 import 来建立依赖关系，
-        从而简化配置和提高复用性。
