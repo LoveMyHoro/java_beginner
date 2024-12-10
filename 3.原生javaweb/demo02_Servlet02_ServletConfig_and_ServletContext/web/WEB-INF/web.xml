@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+    <!--2.配置全局ServletContext对象-->
+    <context-param>
+        <param-name>paramA</param-name>
+        <param-value>valueA</param-value>
+    </context-param>
+    <context-param>
+        <param-name>paramB</param-name>
+        <param-value>valueB</param-value>
+    </context-param>
+
+
+
+
+
+
+    <!--1.配置局部ServletConfig对象-->
+    <servlet>
+        <servlet-name>servlet1</servlet-name>
+        <servlet-class>Servlet1</servlet-class>
+        <!--
+             <init-param>用来配置Servlet的初始参数
+             这些参数会生成ServletConfig对象，传给父类的init方法
+        -->
+        <init-param>
+            <param-name>keya</param-name>
+            <param-value>valuea</param-value>
+        </init-param>
+        <init-param>
+            <param-name>keyb</param-name>
+            <param-value>valueb</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>servlet1</servlet-name>
+        <url-pattern>/s1</url-pattern>
+    </servlet-mapping>
+</web-app>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+    <!--配置filter,并为filter起别名-->
+    <filter>
+        <filter-name>loggingFilter</filter-name>
+        <filter-class>self.filter.LoggingFilter</filter-class>
+    </filter>
+    <!--为别名对应的filter配置要过滤的目标资源-->
+    <filter-mapping>
+        <filter-name>loggingFilter</filter-name>
+        <!--通过映射路径确定过滤资源-->
+        <url-pattern>/servletA</url-pattern>
+        <!--通过后缀名确定过滤资源-->
+        <url-pattern>*.html</url-pattern>
+        <!--通过servlet别名确定过滤资源-->
+        <servlet-name>servletName</servlet-name>
+
+    </filter-mapping>
+</web-app>

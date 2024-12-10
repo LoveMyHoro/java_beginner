@@ -1,0 +1,39 @@
+#1
+select emp.name,age,job,dept.name from emp left join dept on  dept_id=dept.id;
+#2
+select emp.name,age,job,dept.name from emp left join dept on  dept_id=dept.id where emp.age<30;
+#3
+select dept.id,dept.name from dept where dept.id in(select dept_id from emp );
+#4
+select emp.name,dept.name from emp left join dept on  dept_id=dept.id where emp.age>40;
+#5
+select emp.name,salary,salgrade.grade from emp left join salgrade on salary>=salgrade.losal and salary<=salgrade.hisal;
+#6
+select emp.*,salgrade.grade from emp
+    left join salgrade on salary>=salgrade.losal and salary<=salgrade.hisal
+where dept_id=(select id from dept where name='研发部');
+#7
+select avg(salary) from (select * from emp where dept_id=(select id from dept where name='研发部')) e;
+#8
+select emp.*from emp where salary>(select salary from emp where name='灭绝');
+#9
+select * from emp where salary>(select avg(salary) from emp);
+#10
+#先计算部门平均工资
+select dept_id,avg(emp.salary) as salary from emp
+group by dept_id;
+
+select emp.* from emp left join (select dept_id,avg(emp.salary) salary from emp group by dept_id ) e on emp.dept_id=e.dept_id
+where emp.salary<e.salary;
+#11
+#先计算emp中的数目
+select emp.dept_id,count(*) from emp group by dept_id ;
+
+select dept.name,e.num from dept left join (select emp.dept_id,count(*) as num from emp group by dept_id ) e on dept_id=dept.id;
+
+#12
+select student.*,c.name from student
+left join test.student_course sc on student.id = sc.studentid
+left join test.course c on sc.courseid= c.id;
+
+

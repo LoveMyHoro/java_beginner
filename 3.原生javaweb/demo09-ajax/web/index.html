@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+    function getMessage() {
+        //1.实例化一个XMLHttpRequest
+        var xmlHttpRequest = new XMLHttpRequest();
+        //2.设置xmlHttpRequest的回调函数
+        //request.readState 有1，2，3，4四种状态。这里我们只关注第四种状态
+        //request.status 响应状态码
+        xmlHttpRequest.onreadystatechange=function (){
+            if(xmlHttpRequest.readyState==4&&xmlHttpRequest.status==200){
+                //接收响应结果，处理结果
+                console.log(xmlHttpRequest.responseText)
+                //将信息放到指定的位置
+                //利用dom编程通过id获取元素
+                var elementById = document.getElementById("message");
+                elementById.value=xmlHttpRequest.responseText;
+            }
+        }
+        //3.设置向服务端发送请求的方式和请求的资源路径
+        //这里由于是get方式，所以顺便把传的参数放在uri后面
+        xmlHttpRequest.open("Get","/servletA?username=明日香")
+
+        //4.发送请求
+        xmlHttpRequest.send()
+    }
+    </script>
+</head>
+<body>
+<button onclick="getMessage()">按钮</button>
+<input type="text" id="message">
+</body>
+</html>

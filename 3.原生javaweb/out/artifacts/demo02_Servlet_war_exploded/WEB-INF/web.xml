@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+    <!--
+    1.配置Servlet类并起别名
+    servlet-class:告诉Tomcat要实例化的Servlet类
+    servlet-name：用来关联请求的映射路径
+    servlet-mapping:映射路径
+    -->
+
+    <!--
+    url-pattern中可以使用一些通配写法
+        1.精确匹配
+        /userServlet
+        2.模糊匹配
+        *作为通配符，*在哪里，哪里就是模糊的
+            (1)表示通配所有资源,不包括jsp文件
+            意思就是不论你输入框输入什么url，都会跳转到使用了这个的类中，除了jsp文件
+            (2)表示通配所有资源,包括jsp文件
+            (3)匹配所有以a前缀的映射路径
+            (4)匹配所有以action为后缀的映射路径
+-->
+    <servlet>
+        <servlet-name>userServlet</servlet-name>
+        <!--servlet-class代表要访问的类的路径-->
+        <servlet-class>UserServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <!--关联别名和映射路径-->
+        <servlet-name>userServlet</servlet-name>
+        <!--可以为一个Servlet匹配多个不同的映射路径,但是不同的Servlet不能使用相同的url-pattern-->
+        <!--此处的值就是网页上输入的url-->
+        <url-pattern>/userServlet</url-pattern>
+    </servlet-mapping>
+
+
+
+
+    <servlet>
+        <servlet-name>s2</servlet-name>
+        <servlet-class>Servlet2</servlet-class>
+        <!--load-on-startup
+        如果配置的是正整数表示容器在启动时就要实例化Servlet,
+        如果配置的是负数则表示容器在启动时不会实例化Servlet,
+        数字表示的是实例化的顺序
+        -->
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>s2</servlet-name>
+        <url-pattern>/s2</url-pattern>
+    </servlet-mapping>
+
+
+
+</web-app>

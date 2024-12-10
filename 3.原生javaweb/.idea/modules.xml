@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/demo01-web01/demo01-web01.iml" filepath="$PROJECT_DIR$/demo01-web01/demo01-web01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo02-Servlet/demo02-Servlet.iml" filepath="$PROJECT_DIR$/demo02-Servlet/demo02-Servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo02_Servlet02_ServletConfig_and_ServletContext/demo02_Servlet02_ServletConfig_and_ServletContext.iml" filepath="$PROJECT_DIR$/demo02_Servlet02_ServletConfig_and_ServletContext/demo02_Servlet02_ServletConfig_and_ServletContext.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo02_Servlet03_HttpServletRequest_HttpServletResponse/demo02_Servlet03_HttpServletRequest_HttpServletResponse.iml" filepath="$PROJECT_DIR$/demo02_Servlet03_HttpServletRequest_HttpServletResponse/demo02_Servlet03_HttpServletRequest_HttpServletResponse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo02_Servlet04_forward_redirect/demo02_Servlet04_forward_redirect.iml" filepath="$PROJECT_DIR$/demo02_Servlet04_forward_redirect/demo02_Servlet04_forward_redirect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo03_Garbled Problem/demo03_Garbled Problem.iml" filepath="$PROJECT_DIR$/demo03_Garbled Problem/demo03_Garbled Problem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo04_Path/demo04_Path.iml" filepath="$PROJECT_DIR$/demo04_Path/demo04_Path.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo05-cookie-session/demo05-cookie-session.iml" filepath="$PROJECT_DIR$/demo05-cookie-session/demo05-cookie-session.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo06-region/demo06-region.iml" filepath="$PROJECT_DIR$/demo06-region/demo06-region.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo07-filter/demo07-filter.iml" filepath="$PROJECT_DIR$/demo07-filter/demo07-filter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo08-listener/demo08-listener.iml" filepath="$PROJECT_DIR$/demo08-listener/demo08-listener.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo09-ajax/demo09-ajax.iml" filepath="$PROJECT_DIR$/demo09-ajax/demo09-ajax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/schedule-system/schedule-system.iml" filepath="$PROJECT_DIR$/schedule-system/schedule-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/web-all.iml" filepath="$PROJECT_DIR$/.idea/web-all.iml" />
+    </modules>
+  </component>
+</project>

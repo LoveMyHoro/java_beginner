@@ -1,0 +1,46 @@
+尽管在一个 Java Web 项目中可以有多个不同的 Servlet2 类（每个类可以继承 HttpServlet），每个 Servlet2 实例在 Servlet2 容器（如 Tomcat）
+中仍然是单例的。下面是几个关键点，解释这个概念：
+
+1. Servlet2 类的单例模式
+单例实例：在 Servlet2 容器中，针对每个 Servlet2 类（例如，MyServlet1, MyServlet2 等），容器只会创建一个实例，
+这个实例会被所有请求共享。当有请求到达时，Servlet2 容器会使用这个单例实例来处理请求。
+2. 多个 Servlet2 类
+不同的 Servlet2 类：你可以在同一个 Java Web 项目中定义多个不同的 Servlet2 类，每个 Servlet2 类都可以处理相应的请求。
+每个 Servlet2 类都有它自己的单例实例。
+独立性：虽然每个 Servlet2 类的实例是单例的，但它们是彼此独立的。每个 Servlet2 的状态（例如实例变量）不会相互干扰，
+例如 MyServlet1 有自己的状态，而 MyServlet2 则有自己的状态。
+3. 处理请求的机制
+多线程处理：当多个请求同时到达 Servlet2 时，Servlet2 容器会为每个请求创建新的线程，
+这些线程将会共享 Servlet2 类的单例实例进行处理。
+共享状态：因为 Servlet2 实例的状态（如成员变量）在多线程中是共享的，
+开发者需要小心处理这些共享状态以避免数据一致性问题。
+例子
+例如，考虑以下两个 Servlet2 类：
+
+@WebServlet("/first")
+public class FirstServlet extends HttpServlet {
+    private int requestCount = 0;
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        requestCount++;
+        response.getWriter().println("FirstServlet request count: " + requestCount);
+    }
+}
+
+@WebServlet("/second")
+public class SecondServlet extends HttpServlet {
+    private int requestCount = 0;
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        requestCount++;
+        response.getWriter().println("SecondServlet request count: " + requestCount);
+    }
+}
+在这个例子中，FirstServlet 和 SecondServlet 是两个独立的 Servlet2 类，它们分别有自己的单例实例。
+虽然每个实例都有一个 requestCount 变量来计算请求次数，但它们之间不会互相干扰。
+
+总结
+虽然在一个 Java Web 项目中可能有多个不同的 Servlet2 类，每个类在 Servlet2 容器中都有自己的单例实例。
+理解这一点有助于确保在开发中妥善处理线程安全和状态管理。
