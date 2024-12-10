@@ -1,0 +1,12 @@
+git add  文件.文件名      ：把文件放在缓存区
+git add .        : 把所有文件放入缓存区
+git commit      :把文件放入仓库（相当于存档）
+git log      ：查看提交日志
+git log --stat :查看每次提交时都修改了哪些文件
+git diff+某次提交的commit id 就可以查看这次提交修改了哪些内容
+git reset --hard +commit id  :回退到代码在这个commit id时的状态
+
+git branch :查看当前项目有哪些分支
+git checkout -b develop :创建分支develop
+git checkout master:切换到master分支
+git merg develop:在master分支下把develop合并到master分支
