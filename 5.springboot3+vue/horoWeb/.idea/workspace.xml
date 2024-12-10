@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ac93bf13-f8c4-4c20-8ea4-80398eb37fc0" name="更改" comment="dasd" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="mapper" />
+        <option value="application.yaml" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/horo/mapper/ArticlesMapper.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="customMavenHome" value="D:\java\4.SSM\apache-maven-3.6.3" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2ogVdwr6spCL0v7PF6BM8NOW0eN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.big-event [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.horoweb [package].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.HoroWebApplication.executor&quot;: &quot;Run&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/java/5.springboot3+vue/horoWeb&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;应用程序.MailUtils.executor&quot;: &quot;Run&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java\heima-springboot3+vue\horoWeb\src\main\java\com\horo\utils" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.horo.utils" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="HoroWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="horoweb" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.horo.HoroWebApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.horo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.HoroWebApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="ac93bf13-f8c4-4c20-8ea4-80398eb37fc0" name="更改" comment="" />
+      <created>1731291301123</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1731291301123</updated>
+      <workItem from="1731291302252" duration="3803000" />
+      <workItem from="1731299367653" duration="1080000" />
+      <workItem from="1731322734008" duration="2703000" />
+      <workItem from="1731330729519" duration="476000" />
+      <workItem from="1731339588226" duration="1975000" />
+      <workItem from="1731399359430" duration="6619000" />
+      <workItem from="1731409278451" duration="5414000" />
+      <workItem from="1731420837070" duration="1619000" />
+      <workItem from="1731463719853" duration="2726000" />
+      <workItem from="1731473875574" duration="401000" />
+      <workItem from="1731495632451" duration="6146000" />
+      <workItem from="1731509026887" duration="726000" />
+      <workItem from="1731511396530" duration="1442000" />
+      <workItem from="1731513136516" duration="103000" />
+      <workItem from="1731558341222" duration="961000" />
+      <workItem from="1731566254362" duration="4099000" />
+      <workItem from="1731589476875" duration="1659000" />
+      <workItem from="1731591364851" duration="6850000" />
+      <workItem from="1731629050440" duration="4576000" />
+      <workItem from="1731644590620" duration="974000" />
+      <workItem from="1731652211910" duration="10168000" />
+      <workItem from="1731667596170" duration="2864000" />
+      <workItem from="1731670489038" duration="6315000" />
+      <workItem from="1731724509129" duration="3975000" />
+      <workItem from="1731731588814" duration="1620000" />
+      <workItem from="1731745880026" duration="10858000" />
+      <workItem from="1731767773035" duration="923000" />
+      <workItem from="1731770762987" duration="920000" />
+      <workItem from="1731832800774" duration="17910000" />
+      <workItem from="1731899734752" duration="714000" />
+      <workItem from="1731928846166" duration="4743000" />
+      <workItem from="1731990266476" duration="612000" />
+      <workItem from="1732006460098" duration="13135000" />
+      <workItem from="1732068600196" duration="4038000" />
+      <workItem from="1732096837776" duration="319000" />
+      <workItem from="1732102787727" duration="612000" />
+      <workItem from="1732103426814" duration="1584000" />
+      <workItem from="1732188273477" duration="9021000" />
+      <workItem from="1732236517762" duration="2673000" />
+      <workItem from="1732257015844" duration="6557000" />
+      <workItem from="1732264246216" duration="4371000" />
+      <workItem from="1732272025250" duration="3346000" />
+      <workItem from="1732330859802" duration="1153000" />
+      <workItem from="1732337149139" duration="673000" />
+      <workItem from="1732339985380" duration="601000" />
+      <workItem from="1732381025264" duration="1351000" />
+      <workItem from="1732501255932" duration="5000" />
+      <workItem from="1732538074456" duration="322000" />
+      <workItem from="1732539526492" duration="7000" />
+      <workItem from="1732673746784" duration="4826000" />
+      <workItem from="1732706285402" duration="811000" />
+      <workItem from="1732707430853" duration="1367000" />
+      <workItem from="1732709917999" duration="2159000" />
+      <workItem from="1732792263011" duration="424000" />
+      <workItem from="1732839592954" duration="4742000" />
+      <workItem from="1732861928721" duration="10864000" />
+      <workItem from="1732883700068" duration="1213000" />
+      <workItem from="1732933026591" duration="5000" />
+      <workItem from="1732934074148" duration="715000" />
+      <workItem from="1732958767404" duration="12727000" />
+      <workItem from="1733043351976" duration="250000" />
+      <workItem from="1733044111635" duration="13000" />
+      <workItem from="1733044140282" duration="44000" />
+      <workItem from="1733049417594" duration="99000" />
+      <workItem from="1733051306556" duration="1167000" />
+      <workItem from="1733106112401" duration="1111000" />
+      <workItem from="1733135853044" duration="3100000" />
+      <workItem from="1733145717466" duration="725000" />
+      <workItem from="1733216303324" duration="1000" />
+      <workItem from="1733218084493" duration="4000" />
+      <workItem from="1733230587997" duration="3322000" />
+      <workItem from="1733278210814" duration="649000" />
+      <workItem from="1733310992205" duration="3100000" />
+      <workItem from="1733319924013" duration="1270000" />
+      <workItem from="1733372590775" duration="100000" />
+      <workItem from="1733382909182" duration="1259000" />
+      <workItem from="1733397480834" duration="1937000" />
+      <workItem from="1733402629387" duration="2222000" />
+      <workItem from="1733443257900" duration="2476000" />
+      <workItem from="1733466862008" duration="5060000" />
+      <workItem from="1733479035836" duration="1006000" />
+      <workItem from="1733482245102" duration="9562000" />
+      <workItem from="1733494847769" duration="1432000" />
+      <workItem from="1733537699958" duration="512000" />
+      <workItem from="1733550368451" duration="617000" />
+      <workItem from="1733558603711" duration="2708000" />
+      <workItem from="1733820962451" duration="7000" />
+      <workItem from="1733822980321" duration="2000" />
+    </task>
+    <task id="LOCAL-00001" summary="dasd">
+      <option name="closed" value="true" />
+      <created>1731403192463</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731403192463</updated>
+    </task>
+    <task id="LOCAL-00002" summary="dasd">
+      <option name="closed" value="true" />
+      <created>1731420875360</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731420875360</updated>
+    </task>
+    <task id="LOCAL-00003" summary="dasd">
+      <option name="closed" value="true" />
+      <created>1731496020523</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731496020523</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="dasd" />
+    <option name="LAST_COMMIT_MESSAGE" value="dasd" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

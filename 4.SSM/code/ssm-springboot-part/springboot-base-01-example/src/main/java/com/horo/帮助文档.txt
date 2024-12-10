@@ -1,0 +1,18 @@
+这个是springboot的快速体验案例
+1.创建springboot项目方法
+    （1）创建空项目
+    （2）创建子模块
+    （3）在子模块pom中添加标签
+            <parent>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-parent</artifactId>
+                    <version>3.0.5</version>
+            </parent>
+     （4）在子模块中添加依赖
+            <dependencies>
+                <dependency>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-web</artifactId>
+                    <version>3.0.5</version>
+                </dependency>
+            </dependencies>

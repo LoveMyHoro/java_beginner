@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/test/springboot-test/pom.xml" />
+        <option value="$PROJECT_DIR$/Maven/project-01-test/pom.xml" />
+        <option value="$PROJECT_DIR$/Maven/project-03-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/Maven/project-04-micro_shop/pom.xml" />
+        <option value="$PROJECT_DIR$/Maven/project-02-dependenies/pom.xml" />
+        <option value="$PROJECT_DIR$/WebCloudMusic/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm-spring-part/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm-mybatis-part/pom.xml" />
+        <option value="$PROJECT_DIR$/heima-springboot3/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm-springmvc-part/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm-springboot-part/springboot-base-03-druid/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm-springboot-part/springboot-base-01-example/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm-springboot-part/springboot-base-04-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm-springboot-part/springboot-base-02-springmvc/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm-integration-part/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm-mybatis_plus-part/test/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm-mybatis_plus-part/base-03-other/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm-mybatis_plus-part/base-01-example/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm-mybatis_plus-part/base-02-crud-mapper/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-headline-part/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_22" default="true" project-jdk-name="22" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

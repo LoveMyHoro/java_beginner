@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--
+    通过 init-method和destroy-method绑定初始化事件和销毁事件
+-->
+    <bean id="JavaBean" class="com.horo.part_04_组件作用域和周期方法配置.JavaBean" init-method="init" destroy-method="cleanup"/>
+<!--
+    利用scope创建多例的组件
+-->
+    <bean id="JavaBean2" class="com.horo.part_04_组件作用域和周期方法配置.JavaBean2" scope="prototype"/>
+</beans>

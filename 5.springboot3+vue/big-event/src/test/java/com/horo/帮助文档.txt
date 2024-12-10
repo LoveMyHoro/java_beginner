@@ -1,0 +1,11 @@
+        // Endpoint以华北（北京）为例，其它 Region 请按实际情况填写。
+        String endpoint = "https://oss-cn-beijing.aliyuncs.com";
+        // 填写密钥和密码
+        String ACCESS_KEY_ID = "LTAI5tN3rJ6tPK2q5XHV4SMb";
+        String ACCESS_KEY_SECRET = "xXPsHgNXyoQGTroVXVxCHjjflVg3Bc";
+        // 填写 Bucket 名称
+        String bucketName = "horo-event";
+        // 填写 Object 完整路径，完整路径中不能包含 Bucket 名称。
+        String objectName = "001.png";
+        // 填写 Bucket 所在地域。以华东 1（杭州）为例，Region 填写为 cn-hangzhou。
+        String region = "cn-beijing"; // 根据实际情况修改区域名称

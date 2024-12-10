@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+                     <!--这里介绍的是向xml配置文件中的bean 传入参数的三种方法   -->
+<!--
+    方法1.单个构造参数注入
+-->
+    <!--    先导入userDao类-->
+    <bean id="userDao" class="com.horo.part_02_组件依赖注入配置.UserDao"/>
+    <!--    再导入userService类并将userDao作为参数导入-->
+    <bean id="userService" class="com.horo.part_02_组件依赖注入配置.UserService">
+        <!--
+            构造参数传值di的配置
+                value:直接赋属性值
+                ref:引用其他bean(就是其他类)
+            两者选择其中一个就可以了
+            这里userDao就是传入的对象
+        -->
+        <constructor-arg ref="userDao"/>
+    </bean>
+
+<!--
+    方法2.多个构造参数注入
+-->
+    <bean id="userService2" class="com.horo.part_02_组件依赖注入配置.UserService">
+        <constructor-arg name="name" value="明日香"/>
+        <constructor-arg name="age" value="18"/>
+        <constructor-arg name="userDao" ref="userDao"/>
+    </bean>
+<!--
+    重点
+    方法3.触发setter方法进行注入参数
+        利用property标签
+            name代表方法名
+            value和ref二选一
+
+-->
+<!--    先导入MovieFinder类-->
+    <bean id="MovieFinder" class="com.horo.part_02_组件依赖注入配置.MovieFinder"/>
+<!--    再导入SimpleMovieLister类并将MovieFinder作为参数导入
+-->
+<bean id="SimpleMovieLister " class="com.horo.part_02_组件依赖注入配置.SimpleMovieLister">
+    <property name="movieName" value="明日香"/>
+    <property name="movieFinder" ref="MovieFinder"/>
+</bean>
+</beans>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+    <!--利用JdbcTemplate可以对数据库进行增删改查操作，但要利用连接池连接数据库-->
+
+    <!--
+        先导入数据库配置文件，在配置连接池，最后把连接池作为参数给JdbcTemplate
+    -->
+    <context:property-placeholder location="classpath:jdbc.properties"/>
+    <bean id="druidDataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="url" value="${atguigu.url}"/>
+        <property name="driverClassName" value="${atguigu.driver}"/>
+        <property name="username" value="${atguigu.username}"/>
+        <property name="password" value="${atguigu.password}"/>
+    </bean>
+    <!--把连接池作为参数给JdbcTemplate -->
+    <!-- 配置 JdbcTemplate -->
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <!-- 装配数据源 -->
+        <property name="dataSource" ref="druidDataSource"/>
+    </bean>
+
+    <!--  配置Dao,传递JdbcTemplate参数-->
+    <bean id="studentDao" class="com.horo.dao.impl.StudentDaoImpl">
+        <property name="jdbcTemplate" ref="jdbcTemplate"/>
+    </bean>
+    <!--  配置service,传递Dao参数-->
+    <bean id="studentService" class="com.horo.service.impl.StudentServiceImpl">
+        <property name="studentDao" ref="studentDao"/>
+    </bean>
+    <!--  配置controller,传递service参数-->
+    <bean id="studentController" class="com.horo.controller.StudentController">
+        <property name="studentService" ref="studentService"/>
+    </bean>
+</beans>

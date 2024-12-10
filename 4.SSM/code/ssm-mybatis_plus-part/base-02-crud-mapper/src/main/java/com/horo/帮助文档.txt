@@ -1,0 +1,10 @@
+这个是基于baseMapper的crud增强操作
+1.实现过程：
+    1.依赖导入
+    2.application.yam文件中配置数据库
+    3.mapper接口继承BaseMapper<实体类>，<>里面写的是操作数据库的实体类
+        此时就不需要写mapper.xml文件了，在BaseMapper中已经实现了实体类的crud方法，但仅限于单表
+2.注意点
+    (1)测试类在测试包test下的包名和类路径java下的包名不一致会报错，通常情况下，springboot框架会假设测试类与被测试的代码在
+    包结构上有一定的对应关系。 如果包名不一致，测试框架可能无法正确地找到应用程序的配置类，从而导致错误。
+    (2)如果在mapper文件中自定义查询语句，这时就需要mapper.xml文件了，默认的存放地址是resources的mapper目录

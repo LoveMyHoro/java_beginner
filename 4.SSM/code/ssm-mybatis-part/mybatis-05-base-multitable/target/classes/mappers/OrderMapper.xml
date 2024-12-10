@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace等于mapper接口类的全限定名,这样实现对应 -->
+<!--全限定名就是完整地址-->
+<mapper namespace="com.horo.mapper.OrderMapper">
+
+    <!--
+        由于接收返回值的类中包含实体类，而返回的是一系列属性值，所以要自定义返回值类型
+    -->
+    <!--自定义映射关系，定义嵌套对象的映射关系-->
+    <resultMap id="orderMap" type="order">
+        <!--第一层属性，order对象-->
+        <!--id标签代表主键-->
+        <id column="order_id" property="orderId"/>
+        <!--result代表普通列-->
+        <result column="order_name" property="orderName"/>
+        <result column="customer_id" property="customerId"/>
+
+        <!--
+            第二层属性
+                association:为对象属性赋值
+                    property:对象属性名(就是对象实现类的名字)
+                    javaType:对象类型(就是class的那种类型)
+        -->
+        <association property="customer" javaType="customer">
+            <id column="customer_id" property="customerId"/>
+            <result column="customer_name" property="customerName"/>
+        </association>
+    </resultMap>
+    <select id="queryOrderById" resultMap="orderMap">
+        select * from t_order tor join t_customer tur
+            on tor.customer_id=tur.customer_id
+        where tor.order_id=#{id}
+    </select>
+</mapper>

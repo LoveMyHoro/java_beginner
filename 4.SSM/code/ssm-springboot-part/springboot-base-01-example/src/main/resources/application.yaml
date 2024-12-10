@@ -1,0 +1,18 @@
+#yaml配置文件，可以对springboot的一些属性进行修改
+server:
+  servlet:
+    context-path: /boot
+  port: 8081
+
+#这是我们自定义的key
+user:
+  name: horo #值和key的冒号之间要有空格
+  age: 18
+  gfs: #定义集合数据,要主要空格
+    - a
+    - b
+    - c
+spring:
+  profiles:
+    active: dev
+

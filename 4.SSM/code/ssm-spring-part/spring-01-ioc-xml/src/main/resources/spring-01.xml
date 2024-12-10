@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--这里介绍的是怎么向xml配置文件中导入组件的方法(也可以是类)-->
+    <!--
+        1.可以使用无参构造函数实例化的组件，如何进行ioc配置
+
+        -   bean标签：通过配置bean标签告诉IOC容器需要创建对象的组件信息
+        -   id属性：bean的唯一标识,方便后期获取Bean！
+        -   class属性：组件类的全限定符！
+        -   注意：要求当前组件类必须包含无参数构造函数！
+    -->
+    <bean id="HappyComponent" class="com.horo.part_01_组件信息声明配置.HappyComponent" />
+    <bean id="HappyComponent" class="com.horo.part_01_组件信息声明配置.HappyComponent" />
+    <!--
+         2.静态工厂如何声明工厂方法进行ioc配置
+        -   class属性：指定工厂类的全限定符！
+        -   factory-method: 指定静态工厂方法，注意，该方法必须是static方法。
+    -->
+    <bean id="ClientService" class="com.horo.part_01_组件信息声明配置.ClientService" factory-method="createInstance" />
+    <!--
+        3.非静态工厂如何声明ioc配置
+    -->
+    <!-- 3.1 配置工厂的组件信息
+        相当于实例化对象，因为是非静态的，所以要先创建实例对象
+     -->
+    <bean id="defaultServiceLocator" class="com.horo.part_01_组件信息声明配置.DefaultServiceLocator"/>
+    <!-- 3.2 通过指定非静态工厂对象和方法名 来配置生产的ioc信息  -->
+    <bean id="clientService2" factory-bean="defaultServiceLocator" factory-method="createClientServiceInstance"/>
+</beans>

@@ -1,0 +1,16 @@
+事物注解步骤
+1.选择对应的事物管理器加入到ioc容器,并标注@EnableTransactionManagement开启事物注解的支持，放在javaConfig上面
+2.只需要使用注解指定哪些方法需要添加事物即可.一般都是在类上添加事物
+    @Transactional() 替方法添加事物，通常添加在service层的方法中
+3.注意点
+    (1)@Transactional(readOnly=true) 表示只读模式
+    (2)超时回滚：@Transactional(timeout=秒数)， timeout设置事务超时时间,单位秒!
+        默认: -1 永不超时,不限制事务时间! 超过设置的秒数就会回滚事物和释放异常  TransactionTimedOutException
+    (3)指定异常回滚
+        默认情况下，事物发生了RuntimeException才会回滚，其他异常如IoException不会回滚
+        我们可以指定Exception异常来控制说有的异常回滚：@Transactional(rollbackFor=Exception.class)
+    (4)设置隔离级别：@Transactional(isolation=)
+    (5)事物的传播行为：在被调用的子方法中设置传播行为，代表如何处理调用的事务！
+       是保持原来的事物特性，还是遵从父方法事物的特性
+       1.@Transactional(propagation = Propagation.REQUIRED):如果父方法存在，就使用父方法的事物
+       2.@Transactional(propagation = Propagation.REQUIRES_NEW)：保持原来的事物

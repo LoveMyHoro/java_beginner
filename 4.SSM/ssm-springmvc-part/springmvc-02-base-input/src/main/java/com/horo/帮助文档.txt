@@ -1,0 +1,30 @@
+这里的主要是springmvc接收参数的知识。springMVC中前后端传递数据使用的是param和json,
+一.param传参
+    1.注意：参数类型需要是包装类，即int->integer
+    2.接收参数方式
+        (1)直接接收：形参列表填写对于名称的参数即可。请求参数名=形参参数名即可(可以不传递，不报错)
+        (2)注解指定：利用@RequestParam注解接收参数
+            value:指定请求的参数名。如果形参名和请求参数名一致，可以省略
+            required:前端是否必须传递此参数。默认是必须的
+            defaultValue:当是非必须传递时的默认值
+        (3)特殊值接值：一名多值
+            当接收同一参数的多个值，比如param=1&param=2&...时，就要用集合接收List<Integer>param,且必须加@RequestParam注解
+        (4)重点：利用实体类接收数据
+            直接利用实体类作为形参接值，实体类的属性名要等于传入的参数名
+
+    3.路径传参
+        动态路径设计: /参数名/{动态部分}/{动态部分} 动态部分使用{}包含即可! {}内部动态标识!
+          形参列表取值: @PathVariable  如果形参名 = {动态标识} 自动赋值!
+          @PathVariable("动态标识") 如果形参名 != {动态标识} 可以通过指定动态标识赋值!
+          访问测试:  /param/1/root  -> id = 1  uname = root
+
+二.JSON传参
+    1.由于原生java不支持json,所以要做两件事
+        (1)导入json处理的依赖
+        (2)handlerAdapter配置json转换器
+            @EnableWebMvc  //json数据处理,必须使用此注解,因为他会加入json处理器。放到配置类上面
+    2.注意：在控制器中，默认接收参数方式为param。使用 `@RequestBody` 注解来接收 JSON 数据，并将其转换为 Java 对象
+        例如：public String addPerson(@RequestBody Person person)
+
+
+

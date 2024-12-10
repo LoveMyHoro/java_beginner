@@ -1,0 +1,7 @@
+1.导入pom依赖
+2.springMvc配置
+3.service层配置
+4.mybatis(mapper层)配置
+    (1)完全去掉mybatis-config.xml文件，将配置文件中的设置在sqlSessionFactoryBean处实现
+5.mapper文件和mapper.xml文件的构建
+6.mapper层，service层，controller层的三层架构

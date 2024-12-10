@@ -1,0 +1,11 @@
+1.JwtHelper:
+    用来生成加密的token以及校验token是否过期
+
+2.MD5Util:
+    用来加密账户密码
+
+3.Result:
+    用来返回Result结果
+
+4.ResultCodeEnum:
+    用来配合Result，表示状态码

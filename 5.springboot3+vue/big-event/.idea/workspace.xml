@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3e42f4f1-5021-4a70-a8ff-f68c24b16e29" name="更改" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="application.yaml" />
+        <option value="AnnotationType" />
+        <option value="小结" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="customMavenHome" value="D:\java\SSM\apache-maven-3.6.3" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2oEmUEgMC4DlPfUWQxc2FP4Mfkm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.AppTest.testApp.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RedisTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RedisTest.testGet.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RedisTest.testSet.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.test.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.big-event [package].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.BigEventApplication.executor&quot;: &quot;Run&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/java/heima-springboot3+vue/big-event/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Debugger_Data_Views_Java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;应用程序.AliOssUtil.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.Demo.executor&quot;: &quot;Run&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java\heima-springboot3+vue\big-event\src\main\resources" />
+      <recent name="D:\java\heima-springboot3+vue\big-event\src\main\resources\temp" />
+      <recent name="D:\java\heima-springboot3+vue\big-event\src\main\java\com\horo\pojo" />
+      <recent name="D:\java\heima-springboot3+vue\big-event\src\main\java\com\horo\utils" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.horo.utils" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.BigEventApplication">
+    <configuration name="RedisTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="big-event" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.horo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.horo" />
+      <option name="MAIN_CLASS_NAME" value="com.horo.RedisTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisTest.testGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="big-event" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.horo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.horo" />
+      <option name="MAIN_CLASS_NAME" value="com.horo.RedisTest" />
+      <option name="METHOD_NAME" value="testGet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisTest.testSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="big-event" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.horo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.horo" />
+      <option name="MAIN_CLASS_NAME" value="com.horo.RedisTest" />
+      <option name="METHOD_NAME" value="testSet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="big-event" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.horo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.horo" />
+      <option name="MAIN_CLASS_NAME" value="com.horo.test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BigEventApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="big-event" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.horo.BigEventApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.horo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.BigEventApplication" />
+        <item itemvalue="JUnit.RedisTest.testGet" />
+        <item itemvalue="JUnit.RedisTest.testSet" />
+        <item itemvalue="JUnit.RedisTest" />
+        <item itemvalue="JUnit.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="3e42f4f1-5021-4a70-a8ff-f68c24b16e29" name="更改" comment="" />
+      <created>1730443126008</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730443126008</updated>
+      <workItem from="1730443127064" duration="2735000" />
+      <workItem from="1730445969738" duration="9449000" />
+      <workItem from="1730473139429" duration="4939000" />
+      <workItem from="1730514851652" duration="4819000" />
+      <workItem from="1730519720666" duration="313000" />
+      <workItem from="1730537807157" duration="14437000" />
+      <workItem from="1730679863043" duration="2568000" />
+      <workItem from="1730682453930" duration="2212000" />
+      <workItem from="1730685984033" duration="5512000" />
+      <workItem from="1730691789465" duration="248000" />
+      <workItem from="1730711980908" duration="16331000" />
+      <workItem from="1730809517611" duration="8520000" />
+      <workItem from="1730818655460" duration="901000" />
+      <workItem from="1730864110057" duration="302000" />
+      <workItem from="1730895507520" duration="1268000" />
+      <workItem from="1730896948142" duration="11000" />
+      <workItem from="1730902101162" duration="523000" />
+      <workItem from="1730979184137" duration="2000" />
+      <workItem from="1730988269258" duration="2034000" />
+      <workItem from="1731048752294" duration="146000" />
+      <workItem from="1731050326946" duration="3000" />
+      <workItem from="1731065703869" duration="37000" />
+      <workItem from="1731291256572" duration="44000" />
+      <workItem from="1731291815365" duration="1235000" />
+      <workItem from="1731322736550" duration="3000" />
+      <workItem from="1731325949084" duration="7155000" />
+      <workItem from="1731339576918" duration="8000" />
+      <workItem from="1731404641087" duration="320000" />
+      <workItem from="1731410950805" duration="1711000" />
+      <workItem from="1731466402444" duration="48000" />
+      <workItem from="1731495639526" duration="1749000" />
+      <workItem from="1731509032680" duration="2343000" />
+      <workItem from="1731512656867" duration="234000" />
+      <workItem from="1731512987005" duration="61000" />
+      <workItem from="1731513128842" duration="5000" />
+      <workItem from="1731567914326" duration="1085000" />
+      <workItem from="1731569124895" duration="666000" />
+      <workItem from="1731592347979" duration="404000" />
+      <workItem from="1731726454062" duration="704000" />
+      <workItem from="1732260909284" duration="4000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../jdk17/lib/src.zip!/java.base/java/lang/StringLatin1.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

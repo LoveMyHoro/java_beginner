@@ -1,0 +1,14 @@
+1.springboot实现mybatis
+    (1)导入依赖
+    (2)实现xxxMapper和xxxMapper.xml文件
+    (3)在启动类中添加注解@MapperScan("com.horo.mapper")//指定mapper文件夹的地址
+    (4)在application.yaml文件中配置mybatis的相关属性并指定xxxMapper.xml文件的地址
+2.添加事物回滚
+    添加事物依赖后，只需要在方法或类上添加@Transactional注解就可以了
+3.添加Aop
+    (1)添加依赖
+    (2)编写Aop类
+
+4.springboot打包方法
+    (1)添加依赖
+    (2)先clean再package

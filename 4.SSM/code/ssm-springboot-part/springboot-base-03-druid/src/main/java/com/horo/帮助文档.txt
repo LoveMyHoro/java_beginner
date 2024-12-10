@@ -1,0 +1,4 @@
+这里是druid在springboot框架下的使用情况
+1.先导入依赖
+2.在application文件中配置数据库
+3.在controller类中利用jdbcTemplate访问数据库

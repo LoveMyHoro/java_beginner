@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace等于mapper接口类的全限定名,这样实现对应 -->
+<!--全限定名就是完整地址-->
+<mapper namespace="com.horo.mapper.EmployeeMapper">
+    <!--场景1：插入，修改，删除语句 默认返回Integer-->
+    <delete id="deleteById" >
+        delete from t_emp where emp_id=#{id}
+    </delete>
+    <!--
+        场景2：查询语句 自己指定resultType返回类型
+            (1)当返回的是类时：写类的全限定符(完整路径)
+            (2)当返回的是系统提供别名的数据类型时
+                基本数据类型：int double -> _int _double
+                包装数据类型：Integer double -> integer double
+                集合数据类型：Map list HashMap -> map list hashmap
+
+            (3)对于系统没有提供别名的数据类型，比如自己定义的类。可以自己起别名
+             方案1：在mybatis-config.xml中可以如下配置
+                 <typeAliases>
+                     <typeAlias type="com.horo.pojo.Employee" alias="employee"/>
+                 </typeAliases>
+              type:完整地址
+              alias:别名
+
+
+    -->
+    <select id="queryNameById" resultType="string" >
+        select emp_name from t_emp where emp_id=#{id}
+    </select>
+    <!--驼峰自动映射-->
+    <select id="queryEmployeeById" resultType="com.horo.pojo.Employee">
+        select * from t_emp where emp_id=${id}
+    </select>
+    <!--
+       场景3：当我们没有实体类可以用来接值时，可以利用map来接收数据
+          key->查询的列
+          value->查询的值
+    -->
+    <select id="selectEmpNameAndMaxSalary" resultType="java.util.Map">
+        SELECT
+        emp_name 员工姓名,
+        emp_salary 员工工资,
+        (SELECT AVG(emp_salary) FROM t_emp) 部门平均工资
+        FROM t_emp WHERE emp_salary=(
+        SELECT MAX(emp_salary) FROM t_emp
+        )
+    </select>
+    <!--
+        场景4：返回的是集合类型
+        注意：返回值是集合，resultType不需要指定集合类型，只需要指定泛型即可（就是list的所含元素的类型）
+        为什么？
+            因为mybatis的底层调用ibatis时，使用的就是集合。当返回单个元素时，返回的就是list[0]
+    -->
+    <select id="queryAll" resultType="com.horo.pojo.Employee">
+        select * from t_emp
+    </select>
+    <!--
+        场景5：自增类型主键回显
+            useGeneratedKeys="true":开启主键回显
+            keyColumn="emp_id"：主键列的值
+            keyProperty="empId"：接收主键列值的属性
+        返回的主键结果保存在传入的实体类中
+    -->
+    <insert id="insert" useGeneratedKeys="true" keyColumn="emp_id" keyProperty="empId">
+        insert into t_emp(emp_name,emp_salary)values(#{empName},#{empSalary});
+    </insert>
+    <!--
+        场景6：非自增类型主键回显
+        具体内容在TeacherMapper里面
+    -->
+    <!--
+        场景7：自定义映射关系
+            由于驼峰自动映射只能用于单层表的映射，无法用于多表嵌套映射，就是表中含有表。所以我们这里要学习自定义映射关系
+            resultMap
+                id:select resultMap的标识，用于让其他sql语句可以使用这个自定义映射关系。比如下面的<select id
+                type:具体的映射类型
+                    <id :主键的映射关系
+                    <result：普通列的映射关系
+    -->
+    <resultMap id="tMap" type="employee">
+        <id column="emp_id" property="empId"/>
+        <result column="emp_name" property="empName"/>
+        <result column="emp_salary" property="empSalary"/>
+    </resultMap>
+    
+    <select id="queryById" resultMap="tMap">
+        select * from t_emp where emp_id=#{empId}
+    </select>
+</mapper>

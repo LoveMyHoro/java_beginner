@@ -1,0 +1,7 @@
+这个包里主要是多个层的配置类
+    1.Controller层配置类(也是springMvc的配置类)
+    2.Service层的配置类
+    3.Mapper层的配置类
+        Mapper的配置类是完全配置类，去掉了mybatis-config.xml。mybatis-config.xml中的设置在配置类中实现了。
+    4.DataSource的配置类
+    5.Spring的初始化类

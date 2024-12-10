@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="user_service" />
+        <module name="order_service" />
+        <module name="project-02-dependenies" />
+        <module name="child-02" />
+        <module name="common_service" />
+        <module name="project-01-test" />
+        <module name="child-01" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="maven-javase-project-01" target="22" />
+      <module name="maven-javase-project-02" target="22" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

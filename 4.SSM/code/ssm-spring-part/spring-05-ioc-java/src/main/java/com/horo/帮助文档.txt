@@ -1,0 +1,26 @@
+ * 一.使用方法
+ *  1.@Configuration注解代表这个类是注解类
+ *  2.@PropertySource:引入外部配置文件
+ *  3.@ComponentScan:包扫描注解配置，就是要运行的那个包就注解哪个包
+ *  4.@Import：导入其他配置类，相当于整合配置类
+ * 二.注意点
+ *  1.利用@bean注解可以使用外部配置文件的变量
+ *  2.@bean绘会真正的让配置类的方法创建的组件存储到ioc容器
+ *  3.@SpringJUnitConfig:指定配置类，不再需要直接获取容器,通常在test文件中使用。
+ *     要搭配@Autowired一起使用，比如  @Autowired
+                                     private JdbcTemplate jdbcTemplate;
+       这样就不需要自己来创建ioc容器
+ *  三.补充
+ *  问题1：beanName的问题
+ *      默认：方法名
+ *      指定：name/value属性起名字，覆盖方法名
+ *  问题2：周期方法如何置顶
+ *      原有注解方案： PostConstruct+PreDestroy注解指定
+ *      bean属性指定：initMethod+destroyMethod指定
+ *  问题3：作用域
+ *      和以前一样@Scope注解，默认是单例
+ *  问题4：如何引用其他组件
+ *      方案1：如果其他组件也是@bean方法，可以直接调用 | 从ioc容器获取组件
+ *      方案2：作为形参列表传入，可以是一个也可以是多个，ioc容器会注入
+
+具体的实现见javaConfiguration

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--
+    FactoryBean工厂也会被放进容器中，它的标识符是&+id值
+    所以可以在test类中获得工厂
+-->
+    <bean id="javaBean" class="com.horo.part_05_FactoryBean特性和使用.JavaBeanFactoryBean">
+        <constructor-arg value="明日香gogogo"/>
+    </bean>
+</beans>

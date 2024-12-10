@@ -1,0 +1,5 @@
+使用mybatis的步骤
+1.依赖导入
+2.准备数据库实体类
+3.准备Mapper接口和MapperXML文件
+4.准备MyBatis配置文件

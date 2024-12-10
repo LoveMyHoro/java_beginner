@@ -1,0 +1,16 @@
+这里主要是服务端向客户端返回数据的知识点
+    1.以访问jsp资源为例
+        (1)不加@ResponseBody注解
+
+    2.返回JSON数据
+        (1)实现步骤
+            1.导入依赖
+            2.在配置类中配置@EnableWebMvc注解
+        (2)加入@ResponseBody注解后，数据直接放入响应体返回！不会再走视图响应器
+            也就是说快速查找视图，转发和重定向都不生效了
+        (3)@RestController注解相当于@Controller注解+@ResponseBody注解
+    3.静态资源处理
+        (1)由于在spring中Servlet是按照handlerMapping中的路径查找资源的，所以一般的img，html资源无法被直接访问。
+            解决方案:在Config配置类中重写configureDefaultServletHandling方法,再通过configurer.enable()语句
+            开启静态资源查找。此后，在servlet在handlerMapping的路径下无法找到对应的handler后，就会使用forward
+            转发技术，在项目中查找静态资源

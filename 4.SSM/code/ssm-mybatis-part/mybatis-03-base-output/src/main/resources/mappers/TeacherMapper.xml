@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace等于mapper接口类的全限定名,这样实现对应 -->
+<!--全限定名就是完整地址-->
+<mapper namespace="com.horo.mapper.TeacherMapper">
+
+    <!--
+        场景6：非自增类型主键回显
+        利用selectKey
+            order="BEFORE"：选择这段语句是在插入语句之前还是之后执行
+            resultType：返回值类型
+            keyProperty：查询结果给哪个属性赋值
+        生成的 UUID 会被自动赋值给 Mapper 方法中传入对象的 id 属性，之后再执行插入语句
+
+    -->
+    <insert id="insertTeacher">
+        <!--
+            插入之前，先指定一段sql语句，生成一个主键值。再传给插入语句，就类似于主键自增
+        -->
+        <selectKey order="BEFORE" resultType="string" keyProperty="id">
+            select UUID()
+        </selectKey>
+        insert teachers(id,name) values(#{id},#{name})
+    </insert>
+</mapper>

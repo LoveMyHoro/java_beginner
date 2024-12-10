@@ -1,0 +1,25 @@
+一.用户模块开发相关注意点
+    1.登录login
+        (1)jwt和token进行用户数据加密（具体知识点及实现见文档）。
+        (2)@ConfigurationProperties(prefix = "jwt.token")注解配置后（放在类上面），就可以直接使用yaml文件中jwt.token下一层的
+        属性数据，不需要利用@value导入。
+        (3)@CrossOrigin：跨域注解
+        (4)实体类的主键属性上面要加@TableId注解,否则在执行查询语句时会报错
+        (5)接收请求头中的数据必须要加@RequestHeader注解，不然接收不到数据
+    2.根据token获取用户数据
+        (1)token里面放的通常是用户的uuid
+
+二.首页模块开发相关注意点
+    1.vo目录
+        如果没有实体类可以接收传入的参数，可以自己新建一个类。vo目录就是专门接收这类接收参数的类的
+    2.分页查询通常利用Ipage<Map>数据类型来接收mapper.xml查询得到的数据
+
+三.头条模块开发相关注意点
+    注意：由于加了拦截器，进行此模块开发时必须传递token，否则会被拦截
+    1. 将result转为字符串放入response：
+        ObjectMapper objectMapper=new ObjectMapper();
+        String json=objectMapper.writeValueAsString(result);
+        response.getWriter().write(json);
+    2.在进行数据的修改时
+        (1)要获取到数据的最新version，才能修改，且必须把获取到的version赋值给修改的对象
+        (2)修改数据的时间为当前时间

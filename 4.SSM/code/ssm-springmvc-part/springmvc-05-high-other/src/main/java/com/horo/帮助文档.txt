@@ -1,0 +1,31 @@
+这个是关于全局异常处理以及拦截器的知识点
+一.全局异常处理
+1.@RestControllerAdvice和@ControllerAdvice都可以标记全局异常处理类
+    (1)@RestControllerAdvice:直接返回json字符串，一般直接用这个
+    (2)@ControllerAdvice:可以返回逻辑视图，转发和重定向
+2.@ExceptionHandler标记异常处理的方法
+3.子类异常如果没有找到异常处理方法，就会找父类的异常处理方法
+
+二.拦截器
+    1.拦截器和过滤器的作用相同，但过滤器是作用在DispatchServlet外部，而拦截器是作用在DispatchServlet内部
+    2.实现步骤
+        (1)编写拦截器的类，实现HandlerInterceptor接口并重写其中的三个方法
+        (2)编写完拦截器的类后，要在配置文件中配置。配置类要实现WebMvcConfigurer接口,然后重写addInterceptors方法
+        再将拦截器传入重写的方法中
+
+三.参数校验注解
+    1.具体有哪些注解见官方文档
+    2.实现步骤
+        (1)pox.xml文件中导入相关依赖
+        (2)实体类添加校验注解
+        (3)handler方法中使用实体类接值，且必须在参数前添加@Validated注解
+            注意:param参数和json参数校验注解都有效果，但json参数还要加@RequestBody注解
+    3.补充问题
+        1.参数注解在接收的参数不满足校验规则时通常会向前端抛出异常，这样通常不利于问题解决。
+        我们可以接收错误绑定信息，自定义返回结果。
+            实现步骤：
+            (1)public String data3(@Validated @RequestBody User user, BindingResult result)
+                添加BindingResult,BindingResult必须紧挨着校验对象，用于获取错误信息
+            (2)result获取错误信息并自定义返回结果
+
+

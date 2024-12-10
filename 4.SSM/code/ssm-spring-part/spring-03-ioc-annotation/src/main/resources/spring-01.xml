@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+    <!-- 1.标记含有注解的包-->
+    <context:component-scan base-package="com.horo.ioc_01_Bean注解标记和扫描"/>
+    <!-- 注意：类加上注解后，bean的名字就是类的名字但是首字母小写。可以利用value指定名称-->
+
+    <!--
+        2.标记含有注解的包，但去除指定的注解类型。也就是不会扫描到
+    <!- context:exclude-filter标签：指定排除规则 -->
+    <!-- type属性：指定根据什么来进行排除，annotation取值表示根据注解来排除 -->
+    <!-- expression属性：指定排除规则的表达式，对于注解来说指定全类名即可 -->
+
+    <context:component-scan base-package="com.horo.ioc_01_Bean注解标记和扫描">
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Repository"/>
+    </context:component-scan>
+</beans>

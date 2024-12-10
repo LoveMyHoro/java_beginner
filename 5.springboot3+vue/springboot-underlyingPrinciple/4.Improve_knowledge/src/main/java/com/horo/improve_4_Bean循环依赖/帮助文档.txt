@@ -1,0 +1,6 @@
+1.一般情况下Spring是不支持循环依赖的(循环依赖就是Bean A创建的时候要注入Bean B,但Bean B创建的时候同时也要注入
+Bean A)
+2.如果想要Spring支持循环依赖，就要在yaml文件中配置
+    spring:
+      main:
+        allow-circular-references: true

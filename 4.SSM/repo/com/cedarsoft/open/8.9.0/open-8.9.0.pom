@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.cedarsoft</groupId>
+    <artifactId>monorepo</artifactId>
+    <version>8.9.0</version>
+  </parent>
+  <artifactId>open</artifactId>
+  <version>8.9.0</version>
+  <packaging>pom</packaging>
+  <name>cedarsoft OpenSource</name>
+  <description>cedarsoft Open Source projects</description>
+  <url>http://www.cedarsoft.org</url>
+  <inceptionYear>2007</inceptionYear>
+  <licenses>
+    <license>
+      <name>GPLv3 with Classpath Exception</name>
+      <url>https://www.cedarsoft.org/gpl3ce</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <modules>
+    <module>annotations</module>
+    <module>business</module>
+    <module>commons</module>
+    <module>serialization</module>
+    <module>unit</module>
+    <module>photos</module>
+    <module>maven</module>
+  </modules>
+  <issueManagement>
+    <system>GitHub</system>
+    <url>https://github.com/jschneider/com.cedarsoft.monorepo/issues</url>
+  </issueManagement>
+  <profiles>
+    <profile>
+      <id>add-tests-module</id>
+      <activation>
+        <property>
+          <name>!performRelease</name>
+        </property>
+      </activation>
+      <modules>
+        <module>tests</module>
+      </modules>
+    </profile>
+  </profiles>
+</project>

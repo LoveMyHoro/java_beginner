@@ -1,0 +1,46 @@
+aop使用步骤
+1.先写不加aop的目标原代码
+2.再加上aop相关代码，主要步骤如下
+    (1)在增强类中定义方法存储增强代码，也就是要插入的代码
+        具体定义几个方法，根据插入的位置有几处决定
+    (2)使用注解配置，指定插入目标方法的位置
+        前置 @Before
+        后置 @AfterReturning
+        异常 @AfterThrowing
+        最后 @After
+        环绕 @Around:环绕相当于前几个的结合
+    (3)配置切点表达式
+        切点表达式的作用就是选中目标方法，固定格式：访问修饰符+方法的返回参数类型
+            以前置为例 @Before("execution(* com.horo.service.impl.*.*(..))")
+                1.第一个*表示不考虑访问修饰和返回值，两个只能同时不考虑
+                2.之后是包和类的位置
+                    单层模糊: "*"   *可以开头
+                    多层模糊: ".."  如com..impl,则中间的路径可以忽略。".."不能开头
+                3.第二个*表示不考虑类
+                4.第三个*表示不考虑方法
+                5.(..)表示不考虑参数但有参数，()表示没参数
+
+    (4)补全注解
+        加入ioc容器 @Component
+        配置切面    @Aspect
+    (5)在配置类中开启aspect注解的支持 @EnableAspectJAutoProxy
+3.注意
+    (1)使用aop代理后，ioc中存储的不再是原来的目标类，而是拥有相同接口的代理类，所以接收时要使用接口的多态
+        这是在底层是jdk的aop技术的基础下
+    (2)配置类在扫描包时也要扫描增强类的包，因为增强类的代码会插入到目标类中生成代理类
+    (3)增强方法中获取目标方法信息
+       TODO:1.全部增强方法中，获取目标方法信息（方法名，参数，访问修饰符，所属的类的信息...）
+              （JointPoint jointPoint） jointPoint中包含目标的各种信息
+            2.获取目标类的返回结果-只能在@AfterReturning的方法中实现
+               参数（Object result）result接收返回的结果
+               @AfterReturning(value = "execution(* com.horo.service.impl.*.*(..)))",returning = "result")
+                    在@AfterReturning中要配置returning = "result"
+            3.异常的信息-只能在@AfterThrowing的方法中实现
+                参数（Throwable t）t接收异常信息
+                @AfterThrowing(value = "execution(* com.horo.service.impl.*.*(..))",throwing = "t")
+                    在@AfterThrowing中配置throwing = "t"
+    (4)切点表达式的提取提取和复用步骤：
+        1.创建一个存储切点的类，单独维护切点表达式
+        2.在切点类中定义空方法，注解@Pointcut()且里面要写上切点表达式,增强类中的方法引用切点类中的方法即可
+    (5)如果有多个切面，可通过@Order(值)设置切面的优先级。值越低，优先级越高，先执行
+

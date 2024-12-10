@@ -1,0 +1,7 @@
+这里的知识点是
+1.MyBatis动态语句
+2.where if标签
+3.set标签
+4.trim标签
+5.choose/when/otherwise标签
+6.重点：批量操作foreach标签

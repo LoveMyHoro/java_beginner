@@ -1,0 +1,28 @@
+一.实现步骤:
+    1.利用JBLJavaToWeb将项目变为web项目
+    2.检查maven路径是不是自己的maven，不是则修改为xxx.apache-maven-3.6.3。版本号可能不同
+    3.实现handler方法并在handler方法上添加注解
+        @RequestMapping:向handlerMapping中添加这个handler的地址
+            特点(1)精确地址。支持一个地址或者多个地址。也就是一个网址有多个名字
+                (2)支持模糊匹配：/*单层模糊，/**多层模糊
+                (3)类上和方法上添加@RequestMapping的区别：
+                    1.类上是通用的访问地址
+                    2.方法上是具体的handler地址
+                    3.访问：类地址+方法地址即可
+                    4.方法上的@RequestMapping内不填内容代表访问的是类上的地址
+                (4)请求方式指定
+                    1.默认情况下任何请求方式都可以访问handler方法
+                    2.可以通过这个注解内的method指定请求方式，不符合请求方式时会抛出405异常
+                (5)进阶注解
+                    特定的请求方式注解如@PostMapping,作用和指定了请求方式的@RequestMapping相同
+                    但这种注解只能用在方法上
+
+
+        @ResponseBody:将方法的返回值，以特定的格式写入到response的body区域，进而将数据返回给客户端。不找视图解析器
+                      也就是说，如果加了这个注解，返回值就不会再找视图解析器了，直接返回json数据。
+    4.controller配置ioc容器，将handlerMapping handlerAdapter加入到容器
+    5.构造类继承AbstractAnnotationConfigDispatcherServletInitializer并重写方法.作用类似于web.xml文件
+        (1)getServletConfigClasses方法：加载配置类，创建ioc容器
+        (2)getServletMappings方法：配置springMVC内部自带的servlet的访问地址
+
+

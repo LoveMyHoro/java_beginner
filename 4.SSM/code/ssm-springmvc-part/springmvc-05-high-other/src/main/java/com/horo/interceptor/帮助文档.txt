@@ -1,0 +1,8 @@
+这里是拦截器的知识点
+1.配置方案
+     配置方案1：拦截全部请求
+     registry.addInterceptor(new MyInterceptor());
+     配置方案2:指定地址拦截
+     registry.addInterceptor(new MyInterceptor()).addPathPatterns("/user2/data1");
+     配置方案3:指定地址不拦截
+     registry.addInterceptor(new MyInterceptor()).excludePathPatterns("user/data1");

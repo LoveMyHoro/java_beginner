@@ -1,0 +1,19 @@
+#1.导入druid配置
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      url: jdbc:mysql://localhost:3306/mybatis-example
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.cj.jdbc.Driver
+#2.导入mybatis配置
+#(1)这里彻底抛弃了mybatis-config.xml文件
+mybatis:
+  mapper-locations: classpath:/mappers/*.xml #这里*是模糊匹配，指定xxxMapper.xml文件的位置
+  #通常情况下，Spring Boot 会将类名的首字母小写作为默认的类型别名。例如，对于类名 MyClass，默认的类型别名可能是 myClass。
+  type-aliases-package: com.horo
+  configuration:
+    auto-mapping-behavior: full #它表示启用全面的自动映射行为。这意味着在对象之间进行数据传输时，框架会尽可能地自动将源对象的属性值映射到目标对象的对应属性上
+    map-underscore-to-camel-case: true #开启驼峰式命名
+    log-impl: org.apache.ibatis.logging.log4j.Log4jImpl #开启日志输出

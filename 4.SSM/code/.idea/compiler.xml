@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springmvc-01-base-quick" />
+        <module name="order_service" />
+        <module name="mybatis-02-base-input" />
+        <module name="springmvc-02-base-input" />
+        <module name="springboot-base-04-mybatis (1)" />
+        <module name="ssm-integration-02-todolist" />
+        <module name="springmvc-03-base-output" />
+        <module name="springboot-base-01-example" />
+        <module name="springboot-base-02-springmvc" />
+        <module name="spring-05-ioc-java" />
+        <module name="common_service" />
+        <module name="springmvc-05-high-other" />
+        <module name="spring-06-ioc-java-practice" />
+        <module name="springboot-headline-part (1)" />
+        <module name="mybatis-05-base-multitable" />
+        <module name="base-01-example (1)" />
+        <module name="springmvc-04-base-restful" />
+        <module name="project-02-dependenies" />
+        <module name="base-01-example" />
+        <module name="springboot-base-03-druid" />
+        <module name="spring-02-ioc-xml-practice" />
+        <module name="spring-01-ioc-xml" />
+        <module name="spring-07-aop-annotation" />
+        <module name="mybatis-06-base-dynsql" />
+        <module name="mybatis-07-base-extend" />
+        <module name="mybatis-03-base-output" />
+        <module name="spring-08-aop-annotation" />
+        <module name="springboot-base-04-mybatis (2)" />
+        <module name="spring-03-ioc-annotation" />
+        <module name="mybatis-04-base-crud" />
+        <module name="spring-04-ioc-annotaion_practice" />
+        <module name="spring-09-tx-annotation" />
+        <module name="mybatis-01-base-example" />
+        <module name="user_service" />
+        <module name="ssm-integration-01-example" />
+        <module name="base-01-example (2)" />
+        <module name="springboot-base-04-mybatis" />
+        <module name="springboot-headline-part" />
+        <module name="child-02" />
+        <module name="project-01-test" />
+        <module name="child-01" />
+        <module name="heima-springboot3" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="17" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="base-01-example" options="-parameters" />
+      <module name="base-01-example (1)" options="-parameters" />
+      <module name="base-01-example (2)" options="-parameters" />
+      <module name="heima-springboot3" options="-parameters" />
+      <module name="springboot-base-01-example" options="-parameters" />
+      <module name="springboot-base-02-springmvc" options="-parameters" />
+      <module name="springboot-base-03-druid" options="-parameters" />
+      <module name="springboot-base-04-mybatis" options="-parameters" />
+      <module name="springboot-base-04-mybatis (1)" options="-parameters" />
+      <module name="springboot-base-04-mybatis (2)" options="-parameters" />
+      <module name="springboot-headline-part" options="-parameters" />
+      <module name="springboot-headline-part (1)" options="-parameters" />
+    </option>
+  </component>
+</project>

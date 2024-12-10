@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace等于mapper接口类的全限定名,这样实现对应 -->
+<!--全限定名就是完整地址-->
+<mapper namespace="com.horo.mapper.EmployeeMapper">
+
+    <!-- 查询使用 select标签
+            id = 方法名
+            resultType = 返回值类型
+            标签内编写SQL语句
+        注意：mapper中类的方法不能重载
+     -->
+    <select id="queryById" resultType="com.horo.pojo.Employee">
+        <!-- #{empId}代表动态传入的参数,并且进行赋值!后面详细讲解 -->
+        select emp_id empId,emp_name empName, emp_salary empSalary from
+        t_emp where emp_id = #{empId}
+    </select>
+    <!--场景1：传入单个简单类型。这里的#{}内的key随便写，一般情况下推荐写参数名。比如这里是id    -->
+    <delete id="deleteById">
+        delete from t_emp where emp_id = #{empId}
+    </delete>
+    <!--场景2：传入单个实体类的对象。这里的#{}内的key不能随便随便写，必须和类的属性名相同-->
+    <insert id="insertEmp">
+        insert into t_emp(emp_name,emp_salary) values (#{empName},#{empSalary})
+    </insert>
+    <!--
+        场景3：传入(是传入参数，不是存入数据)多个简单数据。不可以随便写
+            规定：在接口的参数位置写上@Parama注解，指定形参特定的名称
+                形参名=@Param("value值")
+    -->
+    <select id="queryByAll" resultType="java.lang.Integer">
+        select * from t_emp where emp_id=#{id} and emp_name=#{name}
+    </select>
+    <!--
+        场景4：传入map如何指定key的值?
+        key=map中的值
+    -->
+    <insert id="insertByMap">
+        insert into t_emp(emp_name,emp_salary) values (#{name},#{salary})
+    </insert>
+</mapper>

@@ -1,0 +1,37 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://47.122.113.36:3306/horoweb
+      username: daifuyang
+      password: 123456
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+# mybatis-plus的配置
+mybatis-plus:
+  type-aliases-package: com.horo.pojo
+  global-config:
+    db-config:
+      logic-delete-field: isDeleted #全局逻辑删除
+      id-type: auto #主键策略自增长
+      table-prefix: news_  #设置表的前置
+  #配置驼峰映射
+  configuration:
+    map-underscore-to-camel-case: true
+#配置jwt
+jwt:
+  token:
+    tokenExpiration: 120 #有效时间，单位秒
+    tokenSignKey: HoroWeb123456 #自定义的签名秘钥
+
+
+
+
+

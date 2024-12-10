@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<!--  gavp属性-->
+<!--  前两个一般不会改变-->
+  <modelVersion>4.0.0</modelVersion>  
+  <groupId>com.horo.j1</groupId>  
+  <artifactId>project-02-dependenies</artifactId>  
+  <version>1.0-SNAPSHOT</version>
+<!--知识点.1
+  maven工程的打包方式
+
+packaging 属性为 jar（默认值），代表普通的Java工程，打包以后是.jar结尾的文件。
+packaging 属性为 war，代表Java的web工程，打包以后.war结尾的文件。
+packaging 属性为 pom，代表不会打包，用来做继承的父工程。
+-->
+  <packaging>war</packaging>
+
+<!--知识点.2
+   第三方依赖信息声明
+   dependencies-项目依赖的集合
+      dependency-每个依赖项
+          gav-依赖的信息，就是其他的依赖工程
+
+   第三方依赖信息怎么知道？
+      1.maven查询官网https://mvnrepository.com/
+      2.maven插件
+          通过工具的Maven Search实现
+-->
+<!--知识点.3
+    (1)依赖传递
+    (2)依赖冲突
+-->
+<!--知识点.4
+    依赖导入失败场景和解决方案
+-->
+<!--知识点.5
+    导入插件
+<build>
+  <plugins>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-war-plugin</artifactId>
+      <version>3.2.2</version>
+    </plugin>
+  </plugins>
+</build>
+-->
+  <dependencies>
+
+    <dependency>
+      <groupId>com.cedarsoft.serialization.commons-serializers</groupId>
+      <artifactId>jackson</artifactId>
+      <version>8.9.0</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version>
+    </dependency>
+  </dependencies>
+
+
+</project>

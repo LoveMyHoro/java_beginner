@@ -1,0 +1,6 @@
+1.创建普通的springboot快速启动文件
+2.application.yaml配置文件:
+    （1）这个配置文件是用于对springboot的一些属性进行修改，如端口号，uri等
+    （2）多环境配置：
+            格式：application-xxx.xml,在application.xml中通过active: xxx激活。xxx是配置文件名字
+            因为springboot只认识application.xml这种配置文件。

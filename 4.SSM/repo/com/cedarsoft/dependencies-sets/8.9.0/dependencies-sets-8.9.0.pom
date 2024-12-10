@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.cedarsoft</groupId>
+    <artifactId>monorepo</artifactId>
+    <version>8.9.0</version>
+  </parent>
+  <artifactId>dependencies-sets</artifactId>
+  <version>8.9.0</version>
+  <packaging>pom</packaging>
+  <name>cedarsoft Dependency Sets Parent</name>
+  <licenses>
+    <license>
+      <name>GPLv3 with Classpath Exception</name>
+      <url>https://www.cedarsoft.org/gpl3ce</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <modules>
+    <module>basics</module>
+    <module>kotlin</module>
+    <module>openjfx</module>
+    <module>tornadofx</module>
+    <module>ktor</module>
+    <module>ktor-client</module>
+    <module>test-basics</module>
+    <module>kotlin-test</module>
+  </modules>
+</project>

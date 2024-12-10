@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace等于mapper接口类的全限定名,这样实现对应 -->
+<!--全限定名就是完整地址-->
+<mapper namespace="com.horo.mapper.MusicMapper">
+
+    <insert id="addMusic">
+        insert music(url,title,user_id) values(#{url},#{title},#{userId})
+    </insert>
+    <select id="getMusicList" resultType="map">
+        select title,url from music where user_id=#{userId}
+    </select>
+    <select id="getAllMusic" resultType="java.util.Map">
+        select title,url from music
+    </select>
+    <select id="getMusicByTitle" resultType="com.horo.pojo.Music">
+        select title,url from music where title=#{title} and user_id=#{userId}
+    </select>
+</mapper>
