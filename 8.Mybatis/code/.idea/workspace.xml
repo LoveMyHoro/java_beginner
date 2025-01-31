@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="01825252-8dad-4233-8d99-0c7c1723184a" name="更改" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="mapper" />
+        <option value="mybatis-config" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="customMavenHome" value="D:\java\env\maven\apache-maven-3.6.3" />
+        <option name="localRepository" value="D:\java\env\maven\repo" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+        <option name="userSettingsFile" value="D:\java\env\maven\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2sAHQTln23xnaMwrCFedXWyUQ3B" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.MyBatisTest.test.executor": "Debug",
+    "JUnit.MyBatisTest.test2.executor": "Run",
+    "JUnit.MyBatisTest.test3.executor": "Run",
+    "JUnit.MyBatisTest.test4.executor": "Run",
+    "JUnit.MyBatisTest.test5.executor": "Run",
+    "JUnit.MyBatisTest.test6.executor": "Run",
+    "JUnit.PageHelperTest.testForPageHelper.executor": "Run",
+    "JUnit.Test.CacheLevelTwo.executor": "Run",
+    "JUnit.Test.test.executor": "Run",
+    "JUnit.Test.test2.executor": "Run",
+    "JUnit.resultMapTest.test.executor": "Run",
+    "JUnit.resultMapTest.test1.executor": "Run",
+    "JUnit.resultMapTest.test2.executor": "Run",
+    "JUnit.resultMapTest.test3.executor": "Run",
+    "JUnit.resultMapTest.test4.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.mybatis-04-MBG [org.mybatis.generator:mybatis-generator-maven-plugin:1.3.0:generate].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/java/学习过程中写过的代码和资料/8.Mybatis/code",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDK",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "Errors",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java\学习过程中写过的代码和资料\MyBatis\mybatis-04-MBG\src\main\resources" />
+      <recent name="D:\java\学习过程中写过的代码和资料\MyBatis\MyBatis-03-dynamic\src\main\resources" />
+      <recent name="D:\java\学习过程中写过的代码和资料\MyBatis\MyBatis-03-dynamic\src\main\java\com\horo\pojo" />
+      <recent name="D:\java\webSocket\MyBatis\MyBatis-02-resultMap\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\java\webSocket\MyBatis\MyBatis-01-example\src\main\resources" />
+      <recent name="D:\java\webSocket\MyBatis\MyBatis-01-example\src\main\resources\mappers" />
+      <recent name="D:\java\webSocket\MyBatis\MyBatis-01-example\src\main\java\com\horo\mapper" />
+      <recent name="D:\java\webSocket\MyBatis\MyBatis-01-example\src\main\java\com\horo\pojo" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.horo.util" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.PageHelperTest.testForPageHelper">
+    <configuration name="PageHelperTest.testForPageHelper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-04-MBG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.horo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.horo" />
+      <option name="MAIN_CLASS_NAME" value="com.horo.PageHelperTest" />
+      <option name="METHOD_NAME" value="testForPageHelper" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test.CacheLevelTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBatis-03-cache" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.horo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.horo" />
+      <option name="MAIN_CLASS_NAME" value="com.horo.Test" />
+      <option name="METHOD_NAME" value="CacheLevelTwo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBatis-03-cache" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.horo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.horo" />
+      <option name="MAIN_CLASS_NAME" value="com.horo.Test" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBatis-03-cache" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.horo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.horo" />
+      <option name="MAIN_CLASS_NAME" value="com.horo.Test" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="resultMapTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBatis-02-resultMap" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.horo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.horo" />
+      <option name="MAIN_CLASS_NAME" value="com.horo.resultMapTest" />
+      <option name="METHOD_NAME" value="test4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PageHelperTest.testForPageHelper" />
+        <item itemvalue="JUnit.Test.CacheLevelTwo" />
+        <item itemvalue="JUnit.Test.test2" />
+        <item itemvalue="JUnit.Test.test" />
+        <item itemvalue="JUnit.resultMapTest.test4" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="01825252-8dad-4233-8d99-0c7c1723184a" name="更改" comment="" />
+      <created>1733920797590</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733920797590</updated>
+      <workItem from="1737891447573" duration="653000" />
+      <workItem from="1737954917567" duration="6762000" />
+      <workItem from="1737970945322" duration="471000" />
+      <workItem from="1737971432405" duration="248000" />
+      <workItem from="1737971690073" duration="1852000" />
+      <workItem from="1737974667035" duration="67000" />
+      <workItem from="1737974746025" duration="3139000" />
+      <workItem from="1737980104752" duration="2799000" />
+      <workItem from="1738064629548" duration="503000" />
+      <workItem from="1738072205417" duration="20000" />
+      <workItem from="1738112333955" duration="392000" />
+      <workItem from="1738112838039" duration="2066000" />
+      <workItem from="1738119419820" duration="1261000" />
+      <workItem from="1738133625956" duration="2026000" />
+      <workItem from="1738142553967" duration="6242000" />
+      <workItem from="1738154883676" duration="2679000" />
+      <workItem from="1738208728710" duration="395000" />
+      <workItem from="1738209231207" duration="18000" />
+      <workItem from="1738209267763" duration="6660000" />
+      <workItem from="1738224785464" duration="5485000" />
+      <workItem from="1738231113085" duration="7563000" />
+      <workItem from="1738300968616" duration="448000" />
+      <workItem from="1738301422229" duration="33000" />
+      <workItem from="1738301711099" duration="665000" />
+      <workItem from="1738302394697" duration="42000" />
+      <workItem from="1738302449294" duration="140000" />
+      <workItem from="1738302600289" duration="6581000" />
+      <workItem from="1738310959207" duration="1140000" />
+      <workItem from="1738327988427" duration="16000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

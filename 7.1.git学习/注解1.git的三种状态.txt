@@ -1,0 +1,13 @@
+GIt在提交之前，存在3种状态：Untracked files（未被追踪、监测）、Changes not staged for commit、Changes to be committed。这三种状态可以任意转换。
+
+1.Untracked files：标记文件还没有被git监测、管理，这时可以使用git add命令将提示为Untracked files的文件添加到git仓库。
+
+2.Changes to be committed：提示为该种状态的文件，已经在暂存区生成了快照，等待被提交。这时可以使用git commit -m "注释"来提交文件。
+
+这个时候，也可以通过 git rm --cached 文件名 命令，将文件状态还原为Untracked状态。
+
+在Changes to be committed状态中的文件，可以被提交，也可以继续修改。
+
+3.Changes not staged for commit：在Changes to be committed状态的文件没有commit而继续修改后，通过git status 查看，就有了Changes not staged for commit状态。这个状态表示文件已经被修改，但是没有放入暂存区域，还没有生成快照。这个时候可以进行2个操作，commit和add操作。
+
+如果进行了commit操作，则只是将修改之前的文件提交到了git版本目录（只有暂存区域的文件，状态为Changes to be committed的文件，才能被提交）；如果需要将修改后的文件也提交，则需要使用git add命令，将文件添加文件到暂存区域。如果想要撤销修改，则使用：git checkout --文件名。

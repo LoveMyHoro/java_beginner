@@ -1,0 +1,5 @@
+方法1：在sql语句中为字段起别名保持和属性名一致，如select emp_name as empName from emp
+方法2：开启驼峰自动映射<setting name="mapUnderscoreToCamelCase" value="true"/>
+方法3（最重要的方法）：利用resultMap自定义映射关系
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              

@@ -1,0 +1,9 @@
+在Spring Cache中使用Redis时：
+比如在@CachePut注解中
+以@CachePut(cacheNames = "userCache",key = "#user.id")为例
+cacheNames：指定缓存名称，例如 userCache。
+key：为缓存项生成唯一标识，可以使用格式如 "#user.id"，表示使用传入参数 user 的 id 属性作为键；或使用 "#result.id"，表示返回值 result 的 id。
+这样，两者结合生成的缓存键是 userCache::2 （假设 user.id 为 2）。这种方式能提高缓存的管理效率，支持灵活的缓存操作。
+
+
+

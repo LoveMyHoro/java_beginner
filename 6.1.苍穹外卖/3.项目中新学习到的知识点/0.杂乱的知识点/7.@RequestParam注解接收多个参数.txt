@@ -1,0 +1,6 @@
+使用@RequestParam处理多个参数非常灵活，可以根据需要接收同一参数的多个值或不同的参数。
+比如
+public String example(@RequestParam List<String> param) {  
+    // param将包含所有传递的值  
+    return "Received: " + param.toString();  
+}

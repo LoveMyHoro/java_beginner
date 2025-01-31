@@ -1,0 +1,7 @@
+SELECT: SELECT name, age FROM users WHERE age > 18;
+
+INSERT: INSERT INTO users (name, age) VALUES ('Alice', 25);
+
+UPDATE: UPDATE users SET age = 26 WHERE name = 'Alice';
+
+DELETE: DELETE FROM users WHERE name = 'Alice';

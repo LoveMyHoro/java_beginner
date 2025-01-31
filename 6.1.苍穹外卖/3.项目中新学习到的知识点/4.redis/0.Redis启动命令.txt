@@ -1,0 +1,6 @@
+1.redis-server.exe redis.windows.conf：
+	启动redis。redis在使用前要先启动，并保持redis的运行状态
+2.redis-cli.exe:
+	连接到redis
+3.redis-cli -h host -p port -a password：
+	连接远程的redis

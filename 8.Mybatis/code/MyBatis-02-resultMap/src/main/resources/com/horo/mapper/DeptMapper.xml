@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace等于mapper接口类的全限定名,这样实现对应 -->
+<!--全限定名就是完整地址-->
+<mapper namespace="com.horo.mapper.DeptMapper">
+    <resultMap id="getDept" type="Dept">
+        <id property="did" column="did"></id>
+        <result property="deptName" column="dept_name"></result>
+    </resultMap>
+    <select id="getEmpAndDeptByStepTwo" resultMap="getDept">
+        select * from t_dept where did=#{did}
+    </select>
+    <!--1.通过resultMap获取查询对象-->
+    <resultMap id="DeptAndEmpResultMap" type="Dept">
+        <id property="did" column="did"></id>
+        <result property="deptName" column="dept_name"></result>
+        <collection property="emps" ofType="Emp">
+            <id property="eid" column="eid"></id>
+            <result property="empName" column="emp_name"></result>
+            <result property="age" column="age"></result>
+            <result property="sex" column="sex"></result>
+            <result property="email" column="email"></result>
+        </collection>
+    </resultMap>
+    <select id="getDeptAndEmp" resultMap="DeptAndEmpResultMap">
+        select * from t_dept left join t_emp on t_dept.did=t_emp.did where t_dept.did=#{did}
+    </select>
+    <!--2.通过resultMap分布获取查询对象-->
+    <resultMap id="deptAndEmpResultMap" type="Dept">
+        <id property="did" column="did"></id>
+        <result property="deptName" column="dept_name"></result>
+        <collection property="emps"
+                    select="com.horo.mapper.EmpMapper.getDeptAndEmpByStepTwo"
+                    column="did"></collection>
+    </resultMap>
+    <select id="getDeptAndEmpByStepOne" resultMap="deptAndEmpResultMap">
+        select * from t_dept where did=#{did}
+    </select>
+</mapper>

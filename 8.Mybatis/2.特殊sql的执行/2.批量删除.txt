@@ -1,0 +1,2 @@
+在通过in进行批量删除语句中只能使用${}，因为#{}会自己加单引号
+例子：delete from t_user where id in (${ids})

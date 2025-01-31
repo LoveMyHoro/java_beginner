@@ -1,0 +1,1 @@
+1.利用HttpClients获取HttpClient的实现类CloseableHttpClient

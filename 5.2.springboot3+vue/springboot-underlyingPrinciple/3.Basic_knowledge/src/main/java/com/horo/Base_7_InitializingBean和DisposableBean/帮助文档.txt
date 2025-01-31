@@ -1,0 +1,1 @@
+@PostConstruct注解和@PreDestroy注解同样可以提供初始化方法和销毁方法，且比实现接口的方法实现的快

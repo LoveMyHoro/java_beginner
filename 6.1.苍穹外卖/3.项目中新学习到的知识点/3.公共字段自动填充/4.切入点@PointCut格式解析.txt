@@ -1,0 +1,7 @@
+@Pointcut("execution(* com.sky.mapper.*.*(..)) && @annotation(com.sky.annotation.AutoFill)")
+
+第一个 *  表示匹配任意返回类型的方法。
+中间的 * 表示匹配 com.sky 及其子包下的任意类或接口（对应 declaring-type-pattern 部分）。
+最后的 * 用于匹配这些类或接口下的任意方法名（对应 name-pattern 部分），
+而括号里的 (..) 表示匹配任意参数的方法（对应 param-pattern 部分）。
+@annotation(com.sky.annotation.AutoFill)表示切入点切入的方法必须要有AutoFill注解

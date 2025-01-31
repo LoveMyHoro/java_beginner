@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace等于mapper接口类的全限定名,这样实现对应 -->
+<!--全限定名就是完整地址-->
+<mapper namespace="com.horo.mapper.EmpMapper">
+    <!--开启二级缓存的其中一步-->
+    <cache/>
+    <resultMap id="getEmpAndDept" type="Emp">
+        <id property="eid" column="eid"></id>
+        <result property="empName" column="emp_name"></result>
+        <result property="age" column="age"></result>
+        <result property="sex" column="sex"></result>
+        <result property="email" column="email"></result>
+        <association property="dept"
+                     select="com.horo.mapper.DeptMapper.getDeptById"
+                     column="did"></association>
+    </resultMap>
+    <select id="getAllEmp" resultMap="getEmpAndDept">
+        select * from t_emp
+    </select>
+</mapper>
