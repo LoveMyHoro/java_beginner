@@ -13,12 +13,12 @@ import java.io.InputStream;
 public class AliOssUtil {
 
         // Endpoint以华北（北京）为例，其它 Region 请按实际情况填写。
-        private static final String ENDPOINT = "https://oss-cn-beijing.aliyuncs.com";
+        private static final String ENDPOINT = "";
         // 填写密钥和密码
-        private static final String ACCESS_KEY_ID = "LTAI5tN3rJ6tPK2q5XHV4SMb";
-        private static final String ACCESS_KEY_SECRET = "xXPsHgNXyoQGTroVXVxCHjjflVg3Bc";
+        private static final String ACCESS_KEY_ID = "";
+        private static final String ACCESS_KEY_SECRET = "";
         // 填写 Bucket 名称
-        private static final String BUCKET_NAME = "horo-event";
+        private static final String BUCKET_NAME = "";
 
     /**
      *
