@@ -1,0 +1,1 @@
+1.在 Spring Data Redis 中，应对 key 和 value 进行序列化处理：key 通常使用String序列化器，而 value 则通常使用 JSON 序列化器。
